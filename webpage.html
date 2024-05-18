@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenStyle Senitha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        ol {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        ol li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>MenStyle Senitha</h1>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('styling-tips')">Styling Tips</a>
+        <a href="javascript:void(0)" onclick="showSection('beauty-tips')">Beauty Tips</a>
+        <a href="https://www.instagram.com/menstylebysenitha" target="_blank">@menstylebysenitha</a>
+    </nav>
+    <main>
+        <section id="styling-tips" class="active">
+            <h2>10 Men's Styling Tips</h2>
+            <ol>
+                <li>Invest in classic, versatile pieces that never go out of style.</li>
+                <li>Ensure your clothes fit well; tailoring can make a big difference.</li>
+                <li>Mix and match patterns and textures to add interest to your outfits.</li>
+                <li>Keep your shoes polished and in good condition.</li>
+                <li>Layer your clothes for both style and practicality.</li>
+                <li>Accessorize with watches, belts, and sunglasses for a polished look.</li>
+                <li>Choose colors that complement your skin tone.</li>
+                <li>Keep your wardrobe updated with seasonal essentials.</li>
+                <li>Always have a well-fitted suit for formal occasions.</li>
+                <li>Pay attention to grooming; a neat appearance enhances any outfit.</li>
+            </ol>
+        </section>
+        <section id="beauty-tips">
+            <h2>10 Men's Beauty Tips</h2>
+            <ol>
+                <li>Maintain a regular skincare routine with cleansing, toning, and moisturizing.</li>
+                <li>Exfoliate your skin twice a week to remove dead skin cells.</li>
+                <li>Use sunscreen daily to protect your skin from UV damage.</li>
+                <li>Keep your beard and hair trimmed and well-groomed.</li>
+                <li>Stay hydrated by drinking plenty of water throughout the day.</li>
+                <li>Get enough sleep to help your skin regenerate and look fresh.</li>
+                <li>Use eye cream to reduce dark circles and puffiness.</li>
+                <li>Eat a balanced diet rich in vitamins and minerals for healthy skin.</li>
+                <li>Exercise regularly to improve circulation and skin tone.</li>
+                <li>Avoid smoking and limit alcohol consumption for better skin health.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MenStyle Senitha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
